@@ -13,7 +13,6 @@ precondition
   `#vi /etc/fstab`
    nodev /mnt/huge hugetlbfs defaults 0 0
 
-
 source download
 =================================
 
