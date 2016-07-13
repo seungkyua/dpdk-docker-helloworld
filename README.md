@@ -2,16 +2,16 @@
 
 precondition
 ================================
-# In a host
+## In a host
 
 1. setting hugepage
-##echo 256 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+  `#echo 256 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages`
 
 2. Using Hugepages with the DPDK
-##mkdir -p /mnt/huge
-##mount -t hugetlbfs nodev /mnt/huge
-##vi /etc/fstab
-nodev /mnt/huge hugetlbfs defaults 0 0
+  `#mkdir -p /mnt/huge`
+  `#mount -t hugetlbfs nodev /mnt/huge`
+  `#vi /etc/fstab`
+   nodev /mnt/huge hugetlbfs defaults 0 0
 
 
 source download
